@@ -59,6 +59,8 @@ body {
 
 .icon {
   display: block;
+
+  /* because <a> is inline elem */
   width: 24px;
   height: 24px;
 }
