@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-}
-
-// -----------
 
 .page {
   /* font-size: ; */
@@ -48,7 +43,7 @@ body {
   background-size: cover;
 }
 
-.header__center {
+.header__bottom {
   font-size: 40px;
   line-height: 200%;
   color: #fff;
@@ -90,6 +85,7 @@ body {
 }
 
 .top-bar__logo {
+  /* also posible display:block */
   display: flex;
 }
 
