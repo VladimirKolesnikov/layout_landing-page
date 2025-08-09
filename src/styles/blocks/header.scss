@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  height: 100vh;
+
+  background-image: url(../../images/header-bg-dt.png);
+  background-position: center;
+  background-size: cover;
+
+  &__title {
+    padding-top: 150px;
+
+    font-size: 80px;
+    line-height: 100%;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -4px;
+  }
+}
