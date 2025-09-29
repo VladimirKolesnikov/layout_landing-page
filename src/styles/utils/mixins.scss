@@ -26,4 +26,12 @@
   @include content-padding-inline;
 
   background-color: aquamarine;
+
+  @include on-tablet {
+    background-color: aqua;
+  }
+
+  @include on-desktop {
+    background-color: lightgreen
+  }
 };
