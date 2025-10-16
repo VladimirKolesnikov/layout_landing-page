@@ -19,6 +19,8 @@
 
   @include on-desktop {
     padding-inline: 120px;
+    
+    // max-width: 1020px;
   }
 };
 
@@ -35,3 +37,19 @@
     background-color: lightgreen
   }
 };
+
+@mixin page-grid {
+  --columns: 2;
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  column-gap: 24px;
+
+  @include on-tablet {
+    --columns: 6;
+  }
+
+  @include on-desktop {
+    --columns: 12;
+  }
+}

@@ -1,21 +1,92 @@
 .hours {
-    // &__title {
-    //     //
-    // }
+    @include pageGrig;
 
-    // &__timetable {
-    //     //
-    // }
+    white-space: nowrap;
 
-    // &__paragraph {
-    //     //
-    // }
+    &__subtitle {
+        margin: 0;
 
-    &__bold-text {
+        font-family: Cinzel, serif;
+        font-size: 12px;
         font-weight: 700;
+        font-style: Bold;
+        line-height: 140%;
+        color: #D12D35;
+        letter-spacing: 0;
     }
 
-    // &__general-text {
-    //     //
-    // }
+    &__title {
+        grid-column: 1 / -1;
+        margin: 0;
+        margin-bottom: 32px;
+
+        @include on-tablet {
+            grid-column: span 3;
+        }
+
+        @include on-desktop {
+            grid-column: span 5;
+        }
+    }
+
+    &__content {
+        grid-column: 1 / -1;
+        margin: 0;
+
+        @include on-tablet {
+            grid-column: span 3;
+        }
+
+        @include on-desktop {
+            grid-column: span 6;
+        }
+    }
+
+    &__h3 {
+        margin: 0;
+        margin-bottom: 16px;
+
+        font-family: Cinzel, serif;
+
+        // font-weight: 700;
+        font-size: 24px;
+        font-style: Bold;
+        line-height: 30px;
+        letter-spacing: 0;
+    }
+
+    &__timetable {
+        margin-bottom: 16px;
+
+        & table {
+            border-collapse: collapse;
+
+            // width: 100%;
+        }
+        & tbody {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 24px 8px;
+        }
+        & tr {
+            display: contents;
+            & :first-child {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__closed-on {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 27px;
+
+        &::first-line {
+            font-weight: bold;
+        }
+
+        & * {
+            margin: 0;
+        }
+    }
 }
